@@ -1,0 +1,29 @@
+#Character sheet object structure:
+
+-Character sheet:
+--Base characteristics:
+---Name
+---Race
+---Attributes
+---Physical
+---Background
+---Details
+--MetaClass:
+---Class(es)
+----Subclass
+----Levels(per class)
+----Bonuses
+----Features
+----Details
+---Total levels
+---Proficiencies
+---Spellcasting
+--Spells (if spellcaster)
+---Prepared
+---Known
+--Equipment
+---Equipable
+---Tools
+---Misc.
+--Skills
+--Actions
