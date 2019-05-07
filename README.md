@@ -6,3 +6,5 @@ Current goals:
 Create basic object architecture for character page
 
 Serialize object information a la transaction history
+
+Organize tests for creation/teardown accuracy of sheet
