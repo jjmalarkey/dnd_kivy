@@ -22,26 +22,27 @@ class BarbarianClassClass(BaseClassClass):
 
 
 class BardClassClass(BaseClassClass):
-
+	pass
 class ClericClassClass(BaseClassClass):
-
+	pass
 class DruidClassClass(BaseClassClass):
-
+	pass
 class FighterClassClass(BaseClassClass):
-
+	pass
 class MonkClassClass(BaseClassClass):
-
+	pass
 class PaladinClassClass(BaseClassClass):
-
-class RogueClassClass(BaseClassClass:)
-
+	pass
+class RogueClassClass(BaseClassClass):
+	pass
 class RangerClassClass(BaseClassClass):
-
+	pass
 class SorcererClassClass(BaseClassClass):
-
+	pass
 class WarlockClassClass(BaseClassClass):
-
+	pass
 class WizardClassClass(BaseClassClass):
+	pass
 
     #Modifiers classes
 

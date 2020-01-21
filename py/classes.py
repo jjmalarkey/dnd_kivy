@@ -34,6 +34,7 @@ class CharacterSheetClass:
 		elif a_class == "fighter":
 			return FighterClassClass(1)
 
+
     #Class classes
 
 class BaseClassClass:
@@ -51,7 +52,20 @@ class BaseClassClass:
 		if(self.levelMap[self.level] != ''):
 			print("got this: " + self.levelMap[self.level])
 
-class BarbarianClassClass(BaseClassClass):
+class MultiClass:
+	def __init__(self, armorProf, weaponProf, toolProf, skillProf):
+		if(len(armorProf)):
+			self.armorProf = armorProf
+		if(len(weaponProf)):
+			self.weaponProf = weaponProf
+		if(len(toolProf)):
+			self.toolProf = toolProf
+		if(len(skillProf)):
+			self.skillProf = skillProf
+	
+#actual classes
+
+class BarbarianClassClass(BaseClassClass, MultiClass):
 	def __init__(self,level):
 		self.name = "barbarian"
 		super().__init__()
@@ -59,6 +73,7 @@ class BarbarianClassClass(BaseClassClass):
 		self.armorProf = ["Light Armor", "Medium Armor", "Shields"]
 		self.weaponProf = ["Simple Weapons", "Martial Weapons"]
 		self.toolProf = []
+		MultiClass.__init__(self, [], ["Martial Weapons", "Simple Weapons"], [], [])
 
 class FighterClassClass(BaseClassClass):
 	def __init__(self,level):
